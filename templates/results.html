@@ -1,0 +1,21 @@
+<!-- results.html -->
+{% extends 'base.html' %}
+{% block heading %}
+{% endblock %}
+{% block lb %}
+<p class ="title1" style="text-align:center;">Prediction Results</p>
+        {% endblock %}
+{% block main %}
+  <div class="box">
+    <p class="title has-text-centered" style="color: black !important;">Job: 
+      <a target="_BLANK" href="{{ page_results.url }}">
+        {{ page_results.header }}
+      </a>
+    </p>
+  </div>
+      <div class="box">
+        <p class="title has-text-centered" style="color: black !important;">
+          Job Post is: {{ page_results.overall }}
+        </p>
+      </div>
+{% endblock %} 
